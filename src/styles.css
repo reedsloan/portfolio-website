@@ -23,3 +23,15 @@
   transform: translateY(1rem);
   transition: opacity 0.15s ease-in, transform 0.15s ease-in;
 }
+
+body {
+  background-image: url("assets/cool-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.an-2 {
+  font-weight: 900;
+  font-size: 7vw;
+}
