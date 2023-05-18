@@ -1,26 +1,40 @@
-<div class="inset-0 absolute">
-<div class="relative container mx-auto text-white flex flex-col justify-around h-screen">
-  <div class="self-center flex flex-col">
-    <h1 class="text-7xl md:text-9xl font-black self-center">Reed Sloan</h1>
-    <h1 class="text-5xl md:text-7xl font-bold text-green-400 self-center">Software Engineer</h1>
-    <h1 class="text-4xl self-center">(Site is still a work in progress)</h1>
-  </div>
 
-  <div class="grid grid-cols-6 sm:grid-cols-12 h-64 text-4xl lg:text-6xl gap-2 mx-2 lg:mx-0">
-    <a
-      class="bg-indigo-800 rounded-4xl col-span-12 lg:col-span-6 flex flex-row justify-between px-12 hover:bg-opacity-80 lg:h-64" href="/projects">
-      <h1 class="self-center">Projects</h1>
-      <i class="fa-solid fa-server self-center text-5xl"></i></a>
-    <a
-      class="bg-indigo-900 rounded-4xl col-span-12 lg:col-span-3 flex flex-row justify-between px-12 hover:bg-opacity-80 lg:h-64" href="/contact">
-      <h1 class="self-center">Contact</h1>
-      <i class="fa-solid fa-envelope self-center text-5xl"></i>
-    </a>
-    <a
-      class="bg-indigo-950 rounded-4xl col-span-12 lg:col-span-3 flex flex-row justify-between px-12 hover:bg-opacity-80 lg:h-64" href="/about">
-      <h1 class="self-center">About</h1>
-      <i class="fa-solid fa-circle-question self-center text-5xl"></i>
-    </a>
+<body>
+<div class="inset-0 absolute">
+  <div class="relative container mx-auto text-white flex flex-col justify-around h-screen">
+    <header>
+      <div class="self-center flex flex-col">
+        <h1 class="text-7xl md:text-9xl font-black self-center">Reed Sloan</h1>
+        <h1 class="text-5xl md:text-7xl font-bold text-green-400 self-center">Software Engineer</h1>
+        <h1 class="text-4xl self-center">(Site is still a work in progress)</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid grid-cols-6 sm:grid-cols-12 h-64 text-4xl lg:text-6xl gap-2 mx-2 lg:mx-0">
+        <a
+          class="bg-indigo-800 rounded-4xl col-span-12 lg:col-span-6 flex flex-row justify-between px-12 hover:bg-opacity-80 lg:h-64"
+          href="/projects"
+          aria-label="Link to Projects page">
+          <h1 class="self-center">Projects</h1>
+          <i class="fa-solid fa-server self-center text-5xl" aria-hidden="true"></i>
+        </a>
+        <a
+          class="bg-indigo-900 rounded-4xl col-span-12 lg:col-span-3 flex flex-row justify-between px-12 hover:bg-opacity-80 lg:h-64"
+          href="/contact"
+          aria-label="Link to Contact page">
+          <h1 class="self-center">Contact</h1>
+          <i class="fa-solid fa-envelope self-center text-5xl" aria-hidden="true"></i>
+        </a>
+        <a
+          class="bg-indigo-950 rounded-4xl col-span-12 lg:col-span-3 flex flex-row justify-between px-12 hover:bg-opacity-80 lg:h-64"
+          href="/about"
+          aria-label="Link to About page">
+          <h1 class="self-center">About</h1>
+          <i class="fa-solid fa-circle-question self-center text-5xl" aria-hidden="true"></i>
+        </a>
+      </div>
+    </main>
+
   </div>
-</div>
 </div>
