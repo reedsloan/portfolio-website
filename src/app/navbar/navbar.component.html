@@ -1,2 +1,26 @@
-<nav class="relative mx-auto container mb-24">
+<nav
+  class="h-16 secondary text-lg rounded-3xl md:container md:mx-auto m-4 md:mt-8 shadow-md p-4 flex flex-row justify-evenly md:justify-between items-center text-sm md:text-lg">
+  <div>
+    <ul class="flex flex-row md:gap-4 justify-between">
+      <li class="">
+        <a href="/" class="nav-link rounded-3xl p-3"
+          [ngClass]="{'secondary-button secondary-hover-override': isActive('/')}">Home</a>
+      </li>
+      <li class="">
+        <a href="/about" class="nav-link rounded-3xl p-3" [ngClass]="{'secondary-button': isActive('/about')}">About</a>
+      </li>
+      <li class="">
+        <a href="/portfolio" class="nav-link rounded-3xl p-3"
+          [ngClass]="{'secondary-button': isActive('/portfolio')}">Portfolio</a>
+      </li>
+      <li>
+        <a href="/contact" class="nav-link rounded-3xl p-3"
+          [ngClass]="{'secondary-button': isActive('/contact')}">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="hidden md:block">
+    <a href="/" class="font-bold">Reed Sloan</a>
+  </div>
 </nav>
+<div class="py-4 md:py-8"></div>
