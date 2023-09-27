@@ -1,23 +1,29 @@
 <app-hero id="#top"></app-hero>
 
 <!-- about me -->
-<div class="container mx-auto px-4 mt-max" id="about-me">
+<div class="container mx-auto px-4 mt-44 mb-44" id="about-me">
   <div class="grid grid-cols-6 md:grid-cols-12 items-center">
       <div class="col-span-6">
-          <!-- <img class="rounded-3xl cover-image" src="assets/code.jpg" alt="Hero Image"> -->
+          <img class="rounded-3xl cover-image" src="assets/setup.jpg" alt="Hero Image">
       </div>
       <div class="w-full col-span-6">
-          <h1 class="text-2xl font-bold mb-4">About Me</h1>
+          <h1 class="text-6xl font-bold mb-4">About Me</h1>
           <p class="text-xl mb-8">
-            I'm always looking for new opportunities to learn and grow as a software engineer. If you have any
+            I'm {{howOldAmI}} years old, male, and from  Oregon. I want to be a software engineer because I love solving problems and making things simpler for people.
+            <br><br>
+            I started coding when I was 16 years old in school, and since then I've worked on many projects starting with simple things such as discord bots, learning web frameworks and building websites, eventually learning the basics Unreal Engine for game development, and I finally found my niche in developing nativeAndroid apps in 2020.
+
+            <br><br>
+            Although I do more than just code, I enjoy traveling, working out, studying languages, building computers, and gaming.
+
+            I'm always looking for new opportunities to learn and grow as a person. If you have any
             questions or would like to get in touch, please feel free to reach out to me via email or LinkedIn.
           </p>
-          <div class="flex flex-row items-center justify-start gap-4 text-4xl">
+          <div class="flex flex-row items-center justify-start gap-4 text-4xl" id="contact">
             <a href="https://www.linkedin.com/in/reedsloan/" class="fab fa-linkedin"></a>
-            <a href="mailto:sloanmobile@gmail.com" class="fas fa-envelope"></a>
+            <a href="mailto:sloanmobile@gmail.com" class="fas fa-envelope"></a><span class="text-xl">sloanmobile@gmail.com</span>
           </div>
       </div>
   </div>
 </div>
-
 <app-footer></app-footer>

@@ -9,6 +9,7 @@ import { HeroComponent } from './home/hero/hero.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HeroComponent,
     PagenotfoundComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

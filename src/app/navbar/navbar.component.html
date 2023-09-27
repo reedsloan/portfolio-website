@@ -7,7 +7,9 @@
           [ngClass]="{'secondary-button secondary-hover-override': isActive('/')}">Home</a>
       </li>
       <li class="">
-        <a href="/about" class="nav-link rounded-3xl p-3" [ngClass]="{'secondary-button': isActive('/about')}">About</a>
+        <!-- call scrollToTargetAdjusted -->
+        <a class="nav-link rounded-3xl p-3 cursor-pointer"
+          (click)="scrollToTargetAdjusted('about-me')">About</a>
       </li>
       <li class="">
         <a href="/portfolio" class="nav-link rounded-3xl p-3"
