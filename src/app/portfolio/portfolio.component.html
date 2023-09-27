@@ -1,62 +1,77 @@
 <div class="container mx-auto px-4">
-  <div class="grid grid-cols-6 md:grid-cols-12 items-center">
-    <div class="w-full col-span-6 pr-16">
-      <!-- Title -->
-      <h1 class="text-6xl font-bold mb-4">Beekeeping App</h1>
-      <!-- Description -->
-      <p class="text-black text-xl my-8">
-        This is a beekeeping app that I am currently working on. It is an
-        android app that will allow beekeepers to track their hives and the
-        health of their bees as well as things like inspections and treatments.
-        <br /><br />
-        The app is coded in Kotlin and uses the Android Jetpack libraries,
-        Material 3 for the user interface, Room for the database, and Retrofit
-        for HTTP requests. Additionally, it employs the Hilt dependency
-        injection library and adheres to the Clean Architecture pattern for
-        layer separation.
-      </p>
+  <div class="flex flex-col items-center container">
+    <!-- Beekeeping App Section -->
+    <div
+    class="flex flex-col lg:flex-row sm:gap-12 items-center border-dashed border-2 border-[color:#061e06] rounded-3xl sm:p-12 p-6"
+    >
+      <div class="lg:w-1/2">
+        <!-- Title -->
+        <h1 class="text-6xl font-bold mb-4">Beekeeping App</h1>
+        <!-- Description -->
+        <p class="text-black text-xl my-8">
+          This is a beekeeping app that I am currently working on. It is an
+          android app that will allow beekeepers to track their hives and the
+          health of their bees as well as things like inspections and
+          treatments.
+          <br /><br />
+          The app is coded in Kotlin and uses the Android Jetpack libraries,
+          Material 3 for the user interface, Room for the database, and Retrofit
+          for HTTP requests. Additionally, it employs the Hilt dependency
+          injection library and adheres to the Clean Architecture pattern for
+          layer separation.
+        </p>
+      </div>
+      <div class="justify-center gap-1 grid grid-cols-3 lg:w-1/2">
+        <img
+          class="rounded-2xl col-span-1"
+          src="assets/hives_list.png"
+          alt="Hives List"
+        />
+        <img
+          class="rounded-2xl col-span-1"
+          src="assets/hive_info.png"
+          alt="Hive Detail"
+        />
+        <img
+          class="rounded-2xl col-span-1"
+          src="assets/inspections.png"
+          alt="Hive Detail 2"
+        />
+      </div>
     </div>
-    <!-- Image -->
-    <div class="flex justify-end col-span-6 flex-row gap-1">
-      <img
-        class="rounded-2xl w-48"
-        src="assets/hives_list.png"
-        alt="Hives List"
-      />
-      <img
-        class="rounded-2xl w-48"
-        src="assets/hive_info.png"
-        alt="Hive Detail"
-      />
-      <img
-        class="rounded-2xl w-48"
-        src="assets/inspections.png"
-        alt="Hive Detail 2"
-      />
-    </div>
-    <!-- spacer -->
-    <div class="w-full col-span-12 mt-44"></div>
-    <div class="w-full col-span-6 gap-8 pr-16">
-      <!-- image -->
-      <img
-        class="rounded-2xl drop-shadow-xl"
-        src="assets/website.png"
-        alt="photo of this website"
-      />
-    </div>
-    <div class="w-full col-span-6 flex-row">
-      <!-- Title -->
-      <h1 class="text-6xl font-bold mb-4">This Website</h1>
-      <!-- Description -->
-      <p class="text-black text-xl my-8">
-        This website is my portfolio website. It is built using Angular and
-        Tailwind CSS and hosted on Firebase.
-        <br /><br />
-        I built this website to showcase my projects and to learn Angular and
-        Tailwind CSS.
-        <br /><br />
-        <a href="https://github.com/reedsloan/portfolio-website" class="secondary-button font-bold py-3 px-6 rounded-full inline-block text-lg">View on GitHub</a>
-      </p>
+
+    <!-- This Website Section -->
+    <div
+      class="flex flex-col lg:flex-row-reverse sm:gap-12 mt-36 items-center border-dashed border-2 border-[color:#061e06] rounded-3xl sm:p-12 p-6"
+    >
+      <div class="lg:w-1/2">
+        <!-- Title -->
+        <h1 class="text-6xl font-bold mb-4">This Website</h1>
+        <!-- Description -->
+        <p class="text-black text-xl my-8">
+          This website is my portfolio website. It is built using Angular and
+          Tailwind CSS and hosted on Firebase.
+          <br /><br />
+          I built this website to showcase my projects and to learn Angular and
+          Tailwind CSS.
+          <br /><br />
+          <a
+            href="https://github.com/reedsloan/portfolio-website"
+            class="secondary-button font-bold py-3 px-6 rounded-full inline-block text-lg"
+            >View on GitHub</a
+          >
+        </p>
+      </div>
+      <!-- Image -->
+      <div
+        class="bg-white rounded-2xl lg:w-1/2 sm:p-6 p-2 shadow-xl bg-opacity-50"
+      >
+        <img
+          class="rounded-2xl"
+          src="assets/website.png"
+          alt="photo of this website"
+        />
+      </div>
     </div>
   </div>
 </div>

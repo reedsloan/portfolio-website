@@ -7,6 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
+  navigateTo(target: string) {
+    // if target is about-me and we are not on the homepage, navigate to the homepage
+    if (target === 'about-me' && this.router.url !== '/') {
+      this.router.navigate(['/']);
+      // wait for the router to navigate to the homepage, then scroll to the target
+      setTimeout(() => {
+        this.scrollToTargetAdjusted(target);
+      }, 100);
+    } else {
+      this.scrollToTargetAdjusted(target);
+    }
+  }
   scrollToTargetAdjusted(target: string): void {
     let element = document.getElementById(target);
     let headerOffset = 45;
