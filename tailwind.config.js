@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'multnomah_falls': "url('assets/img/multnomah_falls.jpg')",
+      }
+    },
     fontFamily: {
       'roboto': ['Roboto', 'sans-serif'],
     }
